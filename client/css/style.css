@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+	background-image: url(../images/qbkls.png);
+}
+
+.navbar {
+	width: 100%;
+	height: 50px;
+	background-color: #0d2ea0;
+	position: fixed;
+	top:0;
+	z-index: 2;
+}
+
+.logo {
+	color: white;
+	padding-left: 5%;
+	width:20%;
+	top: 5px;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.middleNav{
+	width: 73%;
+	display: inline-block;
+	border-right: 1px solid white;
+	height: 50px;
+}
+
+.fa-search{
+	margin-left: 72%;
+}
+
+#search-criteria {
+	margin-top: 10px;
+	height: 30px;
+	width: 20%;
+	margin-left: 1%;
+}
+
+.cart {
+	height: 45px;
+	width: 6%;
+	display: inline-block;
+}
+
+.cart:hover{
+	cursor: pointer;
+}
+
+.cart:hover .fa-shopping-cart{
+	font-size: 18px;
+}
+
+.cart:hover .cartQuantity{
+	font-size: 18px;
+}
+
+.fas{
+	color: white;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.cartQuantity {
+	position: relative;
+	margin-left: 10%;
+	font-family: 'Exo 2', sans-serif;
+	color: white;
+}
+
+#result {
+	margin-top: 60px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.box{
+	display: block;
+	width: 30%;
+	margin: 2% 0 0 2%;
+	height: 350px;
+	border:3px ridge #4b6691;
+	background-color: #dce3ef;
+	color: #3d3f42;
+}
+
+.photo {
+	width: 96%;
+	height:50%;
+	margin-left: 2%;
+	margin-top: 2%;
+	display: block;
+}
+
+.info{
+	height: 20%;
+	margin-top: 2%;
+	margin-left: 3%;
+	width: 96%;
+	display: block;
+}
+
+.mainText {
+	padding-top: 5px;
+	font-size: 18px;
+}
+
+.textModal {
+	margin-left: 4%;
+	width: 92%;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.description {
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+.buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.quantity{
+	position: relative;
+	width: 5%;
+	float: right;
+	border: 2px solid #4b6691;
+	text-align: center;
+}
+
+.addCart{
+	margin-left: 1%;
+	position: relative;
+	background-color: #424b5b;
+	border: 2px solid #424b5b;
+	font-family: 'Exo 2', sans-serif;
+	border-radius: 5%;
+	color: white;
+	cursor: pointer;
+}
+
+.addCart:hover{
+	background-color: #4b6691;
+	border: 2px solid #4b6691;
+
+}
+
+.modal-button{
+	position: relative;
+	height: 7%;
+	line-height: 7%;
+	width: 20%;
+	left: 40%;
+	margin-top: 5%;
+	border: none;
+	background-color: #dce3ef;
+	color: #4b6691;
+	font-family: 'Kanit', sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.modal-button:hover{
+	background-color: #4b6691;
+	color: #dce3ef;
+}
+
+.moreInfo{
+	display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+}
+
+.modal-content{
+	background-color:#4b6691;
+	border-radius: 5%;
+	margin:auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	-webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.photoModal {
+	width: 40%;
+	height:60%;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.infoModal {
+	width: 56%;
+	height:60%;
+	margin-left: 2%;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	color: white;
+}
+
+.buttonsModal {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 3%;
+}
+
+.easyPaginateNav {
+	text-align: center;
+	margin: 20px 0;
+	height: 20px;
+}
+
+.easyPaginateNav a {
+	padding:5px;
+	color: #3d3f42;
+	font-weight: bold;
+	border: 2px solid #4b6691;
+	margin: 5px;
+	font-family: 'Exo 2', sans-serif;
+	text-decoration: none;
+	background-color: #dce3ef;
+}
+
+.easyPaginateNav a.current {
+	font-weight:bold;
+	background-color: #bbc2ce;
+	color: #4b6691;
+	border: 2px solid #4b6691
+}
+
+
+
